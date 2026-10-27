@@ -1,0 +1,51 @@
+{
+    "name": "bifrost-orbit/careers-sdk",
+    "description": "Show jobs from Careers Orbit on a PHP website: a client for the delivery API, applications with files, the talent pool and the candidate portal.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "careers",
+        "jobs",
+        "recruiting",
+        "careers-orbit",
+        "bifrost-orbit",
+        "delivery-api"
+    ],
+    "homepage": "https://docs.bifrostorbit.com/careers/developers/careers-sdk/",
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "psr/http-message": "^1.1 || ^2.0"
+    },
+    "require-dev": {
+        "nyholm/psr7": "^1.8",
+        "phpunit/phpunit": "^10.5 || ^11.0 || ^12.0"
+    },
+    "suggest": {
+        "ext-curl": "Used by the built-in transport. Without it, PHP streams are used."
+    },
+    "autoload": {
+        "psr-4": {
+            "BifrostOrbit\\Careers\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BifrostOrbit\\Careers\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "support": {
+        "source": "https://github.com/bifrost-orbit/careers-sdk-php",
+        "docs": "https://docs.bifrostorbit.com/careers/developers/careers-sdk/",
+        "email": "support@bifrostorbit.com"
+    }
+}
